@@ -30,7 +30,7 @@ require('./routes/applications-api-routes')(app);
 
 const port = 3000;
 
-db.sequelize.sync().then(() => {
+db.sequelize.sync({ force: false }).then(() => {
   app.listen(port, () => {
     console.log('App listening on port http://localhost:' + port);
   });

@@ -4,7 +4,7 @@ const router = express.Router();
 
 // get the index page
 router.get('/', function (req, res) {
-  res.render('pages/index.ejs'); // load the index.ejs file
+  res.render('index.handlebars'); // load the index file
 });
 
 // get the profile for logged in users
