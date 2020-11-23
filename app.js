@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const session = require('express-session');
+require('dotenv').config();
 const routes = require('./routes/html-routes.js');
 const passport = require('./config/passport');
 const exphbs = require('express-handlebars');
